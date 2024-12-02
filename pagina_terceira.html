@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dados sobre Educação</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            /*Flexbox para o conteúdo*/
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            margin: 0;
+        }
+
+        canvas {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+        header {
+            background-color: #14213D;
+            /*#788585*/
+            ;
+            text-align: center;
+            padding: 05px;
+            /*Tamanho da fonte em "em"*/
+            font-size: 1.3em;
+            /*#788585*/
+        }
+
+        header h1 {
+            font-family: 'Courier New', Courier, monospace;
+            /*Espaço acima do título*/
+            padding-top: 15px;
+            color: whitesmoke;
+        }
+
+        header h3 {
+            font-family: 'Courier New', Courier, monospace;
+            color: whitesmoke;
+        }
+
+        main {
+            display: flex;
+            flex: 1;
+        }
+
+        nav {
+            background-color: #FCA311;
+            /*#CCDAD1*/
+            ;
+
+            flex: 1;
+            padding: 20px;
+            line-height: 1.3;
+            font-size: 1.3em;
+            font-family: sans-serif;
+        }
+
+        section {
+            background-color: #CCDAD1;
+            flex: 4;
+            padding-left: 10px;
+            padding-right: 20px;
+            line-height: 1.25;
+            font-size: 1.0em;
+            text-align: justify;
+            font-family: sans-serif;
+        }
+
+        footer {
+            background-color: #14213D;
+            /*#9CAEA9*/
+            ;
+            text-align: left;
+            padding: 5px;
+            font-family: 'Courier New', Courier, monospace;
+            align-items: center;
+        }
+
+        footer img {
+            /*Imagem à direita e proporção com altura automática (auto)*/
+            float: right;
+            width: 10%;
+            height: auto;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        /*Estilos para os links*/
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:hover {
+            background-color: rgb(225, 127, 255);
+        }
+
+        /*Estilos para as classes*/
+
+        .retangulo {
+            /*width: 300px;
+            /* largura do retângulo */
+            padding: 20px;
+            /* espaçamento interno do retângulo */
+            background-color: #9CAEA9;
+            /* cor de fundo do retângulo */
+            border: 5px solid #cccccc00;
+            /* borda do retângulo */
+            height: 100%;
+            box-sizing: border-box;
+        }
+
+        .proporcao-imagem {
+            max-width: 100%;
+            /* Define a largura máxima para a imagem */
+            height: 30vh;
+            /* Mantém a proporção da altura em % da altura da tela */
+            display: block;
+            /* Remove espaçamento extra abaixo da imagem */
+            margin: 0 auto;
+            /* Centraliza a imagem horizontalmente */
+            overflow: hidden;
+            /* Esconde o conteúdo que ultrapassa os limites do contêiner */
+        }
+
+        .footer-content {
+            justify-content: space-between;
+            /* Espaço entre os elementos */
+            align-items: center;
+            /*Centraliza verticalmente */
+            display: flex;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Acompanha Vitória</h1>
+        <h3>Neste portal você pode acompanhar alguns recursos utilizados pela Prefeitura Municipal de Vitória</h3>
+    </header>
+
+    <main>
+        <nav>
+            <div class="retangulo">
+                <h1>Menu</h1>
+                <ul>
+                    <li><a href="index.html">O portal</a></li>
+                    <li><a href="pagina_segunda.html">Dados sobre Saúde</a></li>
+                    <li><a href="pagina_terceira.html">Dados sobre Educação</a></li>
+                    <li><a href="pagina_quarta.html">O projeto</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section>
+            <h2>Dados sobre Educação</h2>
+
+            <h1>Gastos Mensais da Prefeitura com Saúde</h1>
+            <canvas id="gastosSaude"></canvas> <!-- Onde o gráfico será exibido -->
+            <script src="script.js"></script> <!-- Link para o JavaScript -->
+
+
+            <div id="info" style="margin-top: 20px; text-align: center; font-size: 18px; color: #333;"></div>
+
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quia sit quos fugiat atque modi recusandae
+                hic mollitia similique nam. Eum quidem provident fuga. Saepe possimus blanditiis, iure quasi eos ratione
+                fugiat ex consequuntur quo accusantium tenetur eligendi corrupti quia, architecto dolorum deserunt
+                libero earum labore quos odio aperiam iusto! Quae voluptates qui sunt facere beatae, id accusantium
+                possimus magni eius repudiandae amet ipsa ipsum? Architecto optio fugiat sed veniam ut voluptatum saepe
+                eligendi temporibus natus, quas ducimus culpa vel illum sint odit nostrum reprehenderit officia,
+                obcaecati esse sequi autem cupiditate deserunt? Velit eius maxime illum nostrum, animi neque sed dolore
+                consectetur fuga, quod explicabo facere ratione atque at similique, maiores possimus quam ab vero
+                laboriosam? Quam asperiores neque voluptas tempore libero molestias optio vitae mollitia doloribus et
+                facilis dolore saepe dolores, necessitatibus laborum ipsa assumenda recusandae praesentium? Enim, vero
+                suscipit! Quia perferendis quisquam error illum labore voluptatem cumque voluptatum!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quisquam consequatur ea ex
+                necessitatibus aperiam quos sit expedita delectus, excepturi nam nobis dignissimos ab tenetur pariatur!
+                Eaque sequi repellendus:
+            </p>
+
+
+            <img class="proporcao-imagem" src="panoramicavitoria03.jpg" alt="vitoria">
+        </section>
+
+        <nav>
+        </nav>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>Aluno: Alan Diniz Salazar
+                <br> RU: 4499264
+            </p>
+
+            <p>Vitória - ES: <span id="data"></span></p>
+
+            <script>
+                // Obter o elemento onde a data será exibida
+                var dataElement = document.getElementById('data');
+
+                // Obter a data atual
+                var dataAtual = new Date();
+
+                // Formatando a data (exemplo: DD/MM/AAAA)
+                var dia = dataAtual.getDate();
+                var mes = dataAtual.getMonth() + 1; // Mês é indexado a partir de zero
+                var ano = dataAtual.getFullYear();
+
+                // Adicionando um zero à esquerda se for menor que 10
+                if (dia < 10) {
+                    dia = '0' + dia;
+                }
+                if (mes < 10) {
+                    mes = '0' + mes;
+                }
+
+                // Exibir a data formatada no elemento HTML
+                dataElement.textContent = dia + '/' + mes + '/' + ano;
+            </script>
+
+            <img src="uninterpreto.jpg" alt="uninterpreto">
+        </div>
+    </footer>
+</body>
+
+</html>
