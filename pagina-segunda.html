@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados sobre Saúde</title>
     <!--onde aparece o título acima???-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -21,15 +22,23 @@
                 <h1>Menu</h1>
                 <ul>
                     <li><a href="index.html">O portal</a></li>
-                    <li><a href="pagina_segunda.html">Dados sobre Saúde</a></li>
-                    <li><a href="pagina_terceira.html">Dados sobre Educação</a></li>
-                    <li><a href="pagina_quarta.html">O projeto</a></li>
+                    <li><a href="pagina-segunda.html">Dados sobre Saúde</a></li>
+                    <li><a href="pagina-terceira.html">Dados sobre Educação</a></li>
+                    <li><a href="pagina-quarta.html">O projeto</a></li>
                 </ul>
             </div>
         </nav>
 
         <section>
             <h2>Dados sobre Saúde</h2>
+
+            <h1>Gastos Mensais da Prefeitura com Saúde</h1>
+            <canvas id="gastosSaude"></canvas> <!-- Onde o gráfico será exibido -->
+            <script src="script-saude.js"></script> <!-- Link para o JavaScript -->
+
+
+            <div id="info" style="margin-top: 20px; text-align: center; font-size: 18px; color: #333;"></div>
+
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore, illo quisquam beatae
                 nihil totam reprehenderit vel. Perferendis, aut. Tempore fugit est aspernatur saepe. Incidunt debitis
                 obcaecati illum exercitationem consectetur.

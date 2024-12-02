@@ -1,23 +1,7 @@
 // Dados dos gastos mensais (Exemplo)
 const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 const gastos = [12000, 15000, 13000, 14000, 16000, 14500, 13500, 15000, 17000, 15500, 16500, 18000];
-const detalhes = {
-    Janeiro: {
-        resumo: "O maior gasto foi com medicamentos.",
-        detalhes: `
-            - Investimento total: R$ 5.000 em remédios genéricos.
-            - Campanha: "Mais saúde para todos".
-        `
-    },
-    Fevereiro: {
-        resumo: "O aumento foi devido a novas contratações.",
-        detalhes: `
-            - Contratação de 15 profissionais.
-            - Impacto nas unidades de saúde regionais.
-        `
-    },
-
-};
+let detalhes = {}; // Usa-se let para permitir atualização
 
 
 // Configuração do gráfico
@@ -63,6 +47,13 @@ const graficoGastos = new Chart(ctx, {
     }
 });
 
+// Carrega os dados JSON
+fetch('detalhes-saude.json')
+    .then(response => response.json())
+    .then(data => {
+        detalhes = data;
+    });
+
 // Adiciona o listener para interatividade
 document.getElementById('gastosSaude').onclick = function (evt) {
     const points = graficoGastos.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
@@ -71,7 +62,15 @@ document.getElementById('gastosSaude').onclick = function (evt) {
         const firstPoint = points[0];
         const label = graficoGastos.data.labels[firstPoint.index]; // Rótulo (mês)
         const value = graficoGastos.data.datasets[firstPoint.datasetIndex].data[firstPoint.index]; // Valor (gasto)
-        const detalhe = detalhes[label]; // Texto detalhado do mês
+
+        const detalhe = detalhes[label];
+        if (!detalhe) {
+            alert('Detalhes não disponíveis para este mês.');
+            return;
+        }
+
+        // Converte os detalhes para uma lista com estrutura HTML
+        const detalheHTML = detalhe.detalhes.map(item => `<li>${item}</li>`).join('');
 
         // Altera a cor da barra clicada
         graficoGastos.data.datasets[firstPoint.datasetIndex].backgroundColor = Array(gastos.length).fill('rgba(54, 162, 235, 0.6)');
@@ -84,6 +83,7 @@ document.getElementById('gastosSaude').onclick = function (evt) {
             <h3>Detalhes de ${label}</h3>
             <p>Gasto: R$ ${value.toLocaleString()}</p>
             <p><strong>Resumo:</strong> ${detalhe.resumo}</p>
-            <p><strong>Detalhes:</strong><br>${detalhe.detalhes}</p>`;
+            <p><strong>Detalhes:</strong></p>
+            <ul>${detalheHTML}</ul>`; // Exibe os detalhes como uma lista
     }
 };

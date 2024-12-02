@@ -6,6 +6,11 @@ body {
     margin: 0;
 }
 
+canvas {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
 header {
     background-color: #14213D;
     /*#788585*/
@@ -55,8 +60,8 @@ section {
     font-size: 1.0em;
     text-align: justify;
     font-family: sans-serif;
-    height: calc(100vh - 150px);
-    overflow-y: auto;
+    /* height: calc(100vh - 150px);
+    overflow-y: auto;*/
     /* Adiciona a barra de rolagem vertical quando necessário */
 }
 

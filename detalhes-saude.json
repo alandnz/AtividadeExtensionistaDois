@@ -1,0 +1,16 @@
+{
+    "Janeiro": {
+        "resumo": "O maior gasto foi com medicamentos.",
+        "detalhes": [
+            "- Investimento total: R$ 5.000 em remédios genéricos.",
+            "Campanha: \"Mais saúde para todos\"."
+        ]
+    },
+    "Fevereiro": {
+        "resumo": "O aumento foi devido a novas contratações.",
+        "detalhes": [
+            "- Contratação de 15 profissionais.",
+            "Impacto nas unidades de saúde regionais."
+        ]
+    }
+}
