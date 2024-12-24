@@ -1,11 +1,11 @@
 // Dados dos gastos mensais (Exemplo)
 const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
-const gastos = [21264133.16, 33487975.33, 32217052.57, 38251124.44, 40196458.31, 49642912.24, 45232918.62, 44067009.36, 38827239.42, 46224012.52, 62645854.99, 33279907.08];
+const gastos = [35797333.30, 39237394.34, 62816595.48, 70669978.77, 69634658.68, 66812900.92, 86368317.35, 62441364.83, 66185643.45, 80666277.61, 95917716.14, 70227806.54];
 let detalhes = {}; // Usa-se let para permitir atualização
 
 
 // Configuração do gráfico
-const ctx = document.getElementById('gastosSaude').getContext('2d');
+const ctx = document.getElementById('gastosEducacao').getContext('2d');
 const graficoGastos = new Chart(ctx, {
     type: 'bar', // Tipo de gráfico (barras)
     data: {
@@ -23,7 +23,7 @@ const graficoGastos = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Gastos com Saúde Pública em 2024',
+                text: 'Gastos com Educação em 2024',
                 font: {
                     size: 18
                 }
@@ -48,14 +48,14 @@ const graficoGastos = new Chart(ctx, {
 });
 
 // Carrega os dados JSON
-fetch('detalhes-saude.json')
+fetch('detalhes-educacao.json')
     .then(response => response.json())
     .then(data => {
         detalhes = data;
     });
 
 // Adiciona o listener para interatividade
-document.getElementById('gastosSaude').onclick = function (evt) {
+document.getElementById('gastosEducacao').onclick = function (evt) {
     const points = graficoGastos.getElementsAtEventForMode(evt, 'nearest', { intersect: true }, true);
 
     if (points.length) {

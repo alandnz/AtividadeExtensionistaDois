@@ -1,0 +1,74 @@
+{
+    "Janeiro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 165.822.625,00",
+            "- Valor total liquidado: R$ 37.017.262,67"
+        ]
+    },
+    "Fevereiro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 48.818.055,84",
+            "- Valor total liquidado: R$ 40.510.685,65"
+        ]
+    },
+    "Março": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 76.534.614,65",
+            "- Valor total liquidado: R$ 71.259.498,42"
+        ]
+    },
+    "Abril": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 62.625.076,21",
+            "- Valor total liquidado: R$ 62.302.726,52"
+        ]
+    },
+    "Maio": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 74.050.984,16",
+            "- Valor total liquidado: R$ 72.150.938,85"
+        ]
+    },
+    "Junho": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 62.262.647,41",
+            "- Valor total liquidado: R$ 72.360.761,22"
+        ]
+    },
+    "Julho": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 70.024.207,94",
+            "- Valor total liquidado: R$ 84.007.307,74"
+        ]
+    },
+    "Agosto": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 44.995.519,54",
+            "- Valor total liquidado: R$ 61.252.822,10"
+        ]
+    },
+    "Setembro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 55.692.455,08",
+            "- Valor total liquidado: R$ 62.503.455,75"
+        ]
+    },
+    "Outubro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 70.787.716,11",
+            "- Valor total liquidado: R$ 83.184.453,22"
+        ]
+    },
+    "Novembro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 89.258.524,48",
+            "- Valor total liquidado: R$ 100.117.881,44"
+        ]
+    },
+    "Dezembro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 52.332.671,35",
+            "- Valor total liquidado: R$ 72.068.921,30"
+        ]
+    }
+}

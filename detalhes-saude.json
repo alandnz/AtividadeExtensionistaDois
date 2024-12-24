@@ -1,16 +1,74 @@
 {
     "Janeiro": {
-        "resumo": "O maior gasto foi com medicamentos.",
         "detalhes": [
-            "- Investimento total: R$ 5.000 em remédios genéricos.",
-            "Campanha: \"Mais saúde para todos\"."
+            "- Valor total empenhado: R$ 114.053.603,37",
+            "- Valor total liquidado: R$ 21.901.563,38"
         ]
     },
     "Fevereiro": {
-        "resumo": "O aumento foi devido a novas contratações.",
         "detalhes": [
-            "- Contratação de 15 profissionais.",
-            "Impacto nas unidades de saúde regionais."
+            "- Valor total empenhado: R$ 45.934.202,36",
+            "- Valor total liquidado: R$ 36.552.943,88"
+        ]
+    },
+    "Março": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 32.863.955,43",
+            "- Valor total liquidado: R$ 32.556.593,62"
+        ]
+    },
+    "Abril": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 55.689.346,56",
+            "- Valor total liquidado: R$ 37.075.887,54"
+        ]
+    },
+    "Maio": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 52.267.194,70",
+            "- Valor total liquidado: R$ 46.866.427,72"
+        ]
+    },
+    "Junho": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 39.788.452,86",
+            "- Valor total liquidado: R$ 45.843.275,39"
+        ]
+    },
+    "Julho": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 34.791.335,03",
+            "- Valor total liquidado: R$ 45.047.018,24"
+        ]
+    },
+    "Agosto": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 19.912.125,88",
+            "- Valor total liquidado: R$ 42.662.608,88"
+        ]
+    },
+    "Setembro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 31.163.396,00",
+            "- Valor total liquidado: R$ 40.088.519,35"
+        ]
+    },
+    "Outubro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 386291.782,23",
+            "- Valor total liquidado: R$ 48.378.082,16"
+        ]
+    },
+    "Novembro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 49.398.182,48",
+            "- Valor total liquidado: R$ 62.645.854,99"
+        ]
+    },
+    "Dezembro": {
+        "detalhes": [
+            "- Valor total empenhado: R$ 25.369.449,45",
+            "- Valor total liquidado: R$ 32.750.710,59"
         ]
     }
 }
