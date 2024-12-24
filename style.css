@@ -7,8 +7,13 @@ body {
 }
 
 canvas {
-    max-width: 800px;
-    margin: 20px auto;
+    display: block;
+    margin: 0 auto;
+    /* Centraliza o gráfico */
+    max-width: 100%;
+    /* Responsividade */
+    height: auto;
+    /* Ajusta a altura proporcionalmente */
 }
 
 header {

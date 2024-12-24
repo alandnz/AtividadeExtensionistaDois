@@ -23,7 +23,7 @@ const graficoGastos = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Gastos com Saúde Pública em 2024',
+                text: 'Gastos com Saúde em 2024',
                 font: {
                     size: 18
                 }
