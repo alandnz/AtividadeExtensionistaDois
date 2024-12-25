@@ -78,7 +78,7 @@ document.getElementById('gastosSaude').onclick = function (evt) {
         graficoGastos.update(); // Atualiza o gráfico
 
         // Exibe informações na página
-        const infoDiv = document.getElementById('info');
+        const infoDiv = document.getElementById('info-saude');
         infoDiv.innerHTML = `
              <h3>Detalhes de ${label}</h3>
             <p>Valor total pago no mês: R$ ${value.toLocaleString()}</p>

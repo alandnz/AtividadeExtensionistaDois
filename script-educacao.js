@@ -47,6 +47,7 @@ const graficoGastos = new Chart(ctx, {
     }
 });
 
+
 // Carrega os dados JSON
 fetch('detalhes-educacao.json')
     .then(response => response.json())
@@ -78,7 +79,7 @@ document.getElementById('gastosEducacao').onclick = function (evt) {
         graficoGastos.update(); // Atualiza o gráfico
 
         // Exibe informações na página
-        const infoDiv = document.getElementById('info');
+        const infoDiv = document.getElementById('info-educacao');
         infoDiv.innerHTML = `
              <h3>Detalhes de ${label}</h3>
             <p>Valor total pago no mês: R$ ${value.toLocaleString()}</p>
