@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -29,30 +29,33 @@
 
         <section>
             <h2>O portal</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel magni aliquam ex quibusdam eaque quod odio
-                in? Molestias saepe, tempora minima nulla repellendus iusto exercitationem reiciendis natus eligendi
-                corrupti est.</p>
-            <p>lorem Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque, ut. Adipisci tenetur quasi
-                deserunt id? Architecto unde velit dolorum itaque pariatur blanditiis ea sed. Fugit voluptate delectus
-                quidem aut minima.</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium veniam exercitationem tenetur illo
-                ratione assumenda ea et ut explicabo, atque nisi unde laborum, illum eligendi, animi excepturi debitis
-                modi eius voluptates accusamus deserunt est. Cumque veritatis, enim consequuntur deserunt a tenetur
-                exercitationem, sit reiciendis, reprehenderit odit illum odio tempora consectetur necessitatibus dicta
-                perferendis. Necessitatibus tempora praesentium consequatur quo fugiat earum reiciendis ullam ut impedit
-                architecto nisi illum ex quibusdam a recusandae voluptatum consectetur in placeat, at iste! Dolore
-                maxime quod corporis itaque at aspernatur, veritatis animi est earum libero distinctio magni eum ipsam
-                praesentium officia! Hic facere alias autem dolor cum non maiores amet, recusandae est! Iure nam
-                delectus amet voluptate nisi eveniet, rerum dolorum est velit, veritatis officia id! Magni nostrum
-                suscipit deserunt quae laboriosam ab voluptatum rerum saepe. Voluptates cupiditate repellendus harum. Ad
-                accusamus, doloremque aut dolore tempora non soluta voluptates ut tenetur alias iste, harum, odit quasi
-                laborum itaque blanditiis nihil? Ipsam porro itaque labore? Voluptates eveniet modi blanditiis sed quam
-                incidunt nulla inventore! Deserunt minus dignissimos nihil perspiciatis corporis velit assumenda, neque
-                voluptate accusantium ad vitae saepe distinctio. Recusandae sit, laudantium placeat officiis,
-                voluptatibus quia optio nobis quaerat vero consequuntur ut animi cupiditate voluptatem dignissimos eius.
-            </p>
+            <p>O portal desenvolvido é um projeto acadêmico da disciplina Atividades Extensionistas II do curso de
+                Análise e Desenvolvimento de Sistemas (ADS) do Centro Universitário Internacional Uninter. Ele tem como
+                objetivo principal aplicar os conhecimentos adquiridos ao longo do curso em um projeto prático,
+                utilizando tecnologias como HTML, CSS e JavaScript. A proposta consiste em criar um site interativo e
+                acessível, que analise e divulgue dados públicos da Prefeitura Municipal de Vitória, promovendo maior
+                transparência e acessibilidade à população.</p>
 
-            <img class="proporcao-imagem" src="panoramicavitoria03.jpg" alt="vitoria">
+            <p>A ideia central do portal é organizar e apresentar informações relacionadas à saúde e à educação do
+                município, utilizando como referência os Objetivos de Desenvolvimento Sustentável (ODS) da Organização
+                das Nações Unidas (ONU). Por meio de gráficos, tabelas e textos explicativos, o site busca traduzir
+                dados complexos em informações mais simples e compreensíveis para os cidadãos, promovendo o engajamento
+                da comunidade na fiscalização das receitas e despesas públicas.</p>
+
+            <p>O escopo do projeto foi delimitado para abordar exclusivamente os temas de saúde e educação, devido à
+                amplitude dos dados disponíveis e ao foco em criar uma solução viável dentro do período acadêmico. Esses
+                temas foram escolhidos por sua relevância e impacto direto na qualidade de vida dos munícipes. Assim, o
+                portal não apenas contribui para a conscientização e o acesso à informação, mas também estimula o senso
+                crítico e a participação ativa da população na gestão pública.</p>
+
+            <p>Espera-se que o portal seja uma ferramenta útil para a comunidade, permitindo que qualquer cidadão, mesmo
+                sem conhecimentos técnicos avançados, possa acessar informações importantes de forma prática e
+                intuitiva. Além disso, o projeto reforça a importância da utilização de dados públicos para promover
+                maior transparência e participação social, demonstrando o papel da tecnologia como um meio de
+                transformação e inclusão.</p>
+
+
+            <img class="proporcao-imagem" src="images/panoramicavitoria03.jpg" alt="vitoria">
         </section>
 
         <nav>
@@ -67,33 +70,12 @@
 
             <p>Vitória - ES: <span id="data"></span></p>
 
-            <script>
-                // Obter o elemento onde a data será exibida
-                var dataElement = document.getElementById('data');
-
-                // Obter a data atual
-                var dataAtual = new Date();
-
-                // Formatando a data (exemplo: DD/MM/AAAA)
-                var dia = dataAtual.getDate();
-                var mes = dataAtual.getMonth() + 1; // Mês é indexado a partir de zero
-                var ano = dataAtual.getFullYear();
-
-                // Adicionando um zero à esquerda se for menor que 10
-                if (dia < 10) {
-                    dia = '0' + dia;
-                }
-                if (mes < 10) {
-                    mes = '0' + mes;
-                }
-
-                // Exibir a data formatada no elemento HTML
-                dataElement.textContent = dia + '/' + mes + '/' + ano;
-            </script>
-
-            <img src="uninterpreto.jpg" alt="uninterpreto">
+            <img src="images/uninterpreto.jpg" alt="uninterpreto">
         </div>
     </footer>
+
+    <script src="js/script-footer.js" defer></script>
+    <!-- Usar o atributo defer para garantir que o JS seja executado somente após carregamento completo do DOM-->
 </body>
 
 </html>

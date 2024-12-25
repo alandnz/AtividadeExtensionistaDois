@@ -23,9 +23,9 @@ const graficoGastos = new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Gastos com Educação em 2024',
+                text: 'Gastos Mensais da Prefeitura com Educação em 2024',
                 font: {
-                    size: 18
+                    size: 20
                 }
             }
         },
@@ -49,7 +49,7 @@ const graficoGastos = new Chart(ctx, {
 
 
 // Carrega os dados JSON
-fetch('detalhes-educacao.json')
+fetch('data/detalhes-educacao.json')
     .then(response => response.json())
     .then(data => {
         detalhes = data;

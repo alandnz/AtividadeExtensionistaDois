@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados sobre Educação</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -31,17 +31,15 @@
         <section>
             <h2>Dados sobre Educação</h2>
 
-            <h1>Receita Total da Prefeitura</h1>
-            <canvas id="receita"></canvas> //Onde o gráfico será exibido
-            <script src="script-receita.js"></script>
+            <canvas id="receita"></canvas> <!-- Onde o gráfico será exibido -->
+            <script src="js/script-receita.js"></script>
 
-            <div id="info-receita" style="margin-top: 20px; text-align: center; font-size: 18px; color: #333;"></div>
+            <div id="info-receita"></div>
 
-            <h1>Gastos Mensais da Prefeitura com Educação</h1>
             <canvas id="gastosEducacao"></canvas> <!-- Onde o gráfico será exibido -->
-            <script src="script-educacao.js"></script>
+            <script src="js/script-educacao.js"></script>
 
-            <div id="info-educacao" style="margin-top: 20px; text-align: center; font-size: 18px; color: #333;"></div>
+            <div id="info-educacao"></div>
 
             <p>Para consultar os valores de cada mês, basta clicar na coluna desejada.
             </p>
@@ -82,7 +80,7 @@
             </p>
 
 
-            <img class="proporcao-imagem" src="panoramicavitoria03.jpg" alt="vitoria">
+            <img class="proporcao-imagem" src="images/panoramicavitoria03.jpg" alt="vitoria">
         </section>
 
         <nav>
@@ -97,36 +95,12 @@
 
             <p>Vitória - ES: <span id="data"></span></p>
 
-            <script>
-                // Obter o elemento onde a data será exibida
-                var dataElement = document.getElementById('data');
-
-                // Obter a data atual
-                var dataAtual = new Date();
-
-                // Formatando a data (exemplo: DD/MM/AAAA)
-                var dia = dataAtual.getDate();
-                var mes = dataAtual.getMonth() + 1; // Mês é indexado a partir de zero
-                var ano = dataAtual.getFullYear();
-
-                // Adicionando um zero à esquerda se for menor que 10
-                if (dia < 10) {
-                    dia = '0' + dia;
-                }
-                if (mes < 10) {
-                    mes = '0' + mes;
-                }
-
-                // Exibir a data formatada no elemento HTML
-                dataElement.textContent = dia + '/' + mes + '/' + ano;
-            </script>
-
-            <img src="uninterpreto.jpg" alt="uninterpreto">
+            <img src="images/uninterpreto.jpg" alt="uninterpreto">
         </div>
     </footer>
 
-    <!-- <script src="script-receita.js?v=1.0.0" defer></script>
-    <script src="script-educacao.js?v=1.0.0" defer></script> -->
+    <script src="js/script-footer.js" defer></script>
+    <!-- Usar o atributo defer para garantir que o JS seja executado somente após carregamento completo do DOM-->
 
 </body>
 

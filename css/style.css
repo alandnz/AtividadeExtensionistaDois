@@ -137,3 +137,14 @@ a:hover {
     display: flex;
     color: whitesmoke;
 }
+
+/*IDs para os gráficos*/
+
+#info-receita,
+#info-saude,
+#info-educacao {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}

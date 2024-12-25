@@ -25,7 +25,7 @@ const graficoGastos = new Chart(ctx, {
                 display: true,
                 text: 'Gastos com Saúde em 2024',
                 font: {
-                    size: 18
+                    size: 20
                 }
             }
         },
@@ -48,7 +48,7 @@ const graficoGastos = new Chart(ctx, {
 });
 
 // Carrega os dados JSON
-fetch('detalhes-saude.json')
+fetch('data/detalhes-saude.json')
     .then(response => response.json())
     .then(data => {
         detalhes = data;

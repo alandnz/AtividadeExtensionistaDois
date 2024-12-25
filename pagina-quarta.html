@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>O Projeto</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -30,21 +30,24 @@
         <section>
             <h2>O projeto</h2>
 
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro quia sit quos fugiat atque modi recusandae
-                hic mollitia similique nam. Eum quidem provident fuga. Saepe possimus blanditiis, iure quasi eos ratione
-                fugiat ex consequuntur quo accusantium tenetur eligendi corrupti quia, architecto dolorum deserunt
-                libero earum labore quos odio aperiam iusto! Quae voluptates qui sunt facere beatae, id accusantium
-                possimus magni eius repudiandae amet ipsa ipsum? Architecto optio fugiat sed veniam ut voluptatum saepe
-                eligendi temporibus natus, quas ducimus culpa vel illum sint odit nostrum reprehenderit officia,
-                obcaecati esse sequi autem cupiditate deserunt? Velit eius maxime illum nostrum, animi neque sed dolore
-                consectetur fuga, quod explicabo facere ratione atque at similique, maiores possimus quam ab vero
-                laboriosam? Quam asperiores neque voluptas tempore libero molestias optio vitae mollitia doloribus et
-                facilis dolore saepe dolores, necessitatibus laborum ipsa assumenda recusandae praesentium? Enim, vero
-                suscipit! Quia perferendis quisquam error illum labore voluptatem cumque voluptatum!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam quisquam consequatur ea ex
-                necessitatibus aperiam quos sit expedita delectus, excepturi nam nobis dignissimos ab tenetur pariatur!
-                Eaque sequi repellendus:
-            </p>
+            <p>O projeto foi desenvolvido por Alan Diniz Salazar, estudante do curso de Análise e Desenvolvimento de
+                Sistemas, como parte das atividades propostas pela disciplina Atividades Extensionistas II. A
+                expectativa inicial era criar um portal simples, mas funcional, que pudesse traduzir dados públicos
+                complexos em informações acessíveis para a população. No entanto, o desenvolvimento do projeto trouxe
+                desafios significativos, como a análise de dados extensos e variados da Prefeitura Municipal de Vitória
+                e a construção de uma interface intuitiva e responsiva, capaz de atender às necessidades dos usuários.
+                Superar esses desafios foi essencial para o aprendizado e para o aprimoramento das habilidades técnicas
+                e analíticas do autor.</p>
+
+            <p>O portal reflete não apenas a aplicação prática dos conceitos aprendidos ao longo do curso, mas também o
+                compromisso com a transparência e a inclusão social, alinhado aos Objetivos de Desenvolvimento
+                Sustentável da ONU. Este projeto representa a conclusão de uma etapa importante na formação do aluno
+                como desenvolvedor, evidenciando a necessidade de se transformar problemas reais em soluções
+                tecnológicas relevantes. O autor espera que o portal sirva como uma ferramenta útil para a comunidade e
+                inspire futuras iniciativas acadêmicas e profissionais voltadas para a cidadania e o desenvolvimento
+                sustentável.</p>
+
+            <p>Para saber mais sobre o autor deste projeto, consulte os links abaixo.</p>
 
             <ul>
                 <p><a href="https://github.com/alandnz">GitHub</a></p>
@@ -76,7 +79,7 @@
                 </table>
             </form>
 
-            <img class="proporcao-imagem" src="panoramicavitoria03.jpg" alt="vitoria">
+            <img class="proporcao-imagem" src="images/panoramicavitoria03.jpg" alt="vitoria">
         </section>
 
         <nav>
@@ -91,33 +94,12 @@
 
             <p>Vitória - ES: <span id="data"></span></p>
 
-            <script>
-                // Obter o elemento onde a data será exibida
-                var dataElement = document.getElementById('data');
-
-                // Obter a data atual
-                var dataAtual = new Date();
-
-                // Formatando a data (exemplo: DD/MM/AAAA)
-                var dia = dataAtual.getDate();
-                var mes = dataAtual.getMonth() + 1; // Mês é indexado a partir de zero
-                var ano = dataAtual.getFullYear();
-
-                // Adicionando um zero à esquerda se for menor que 10
-                if (dia < 10) {
-                    dia = '0' + dia;
-                }
-                if (mes < 10) {
-                    mes = '0' + mes;
-                }
-
-                // Exibir a data formatada no elemento HTML
-                dataElement.textContent = dia + '/' + mes + '/' + ano;
-            </script>
-
-            <img src="uninterpreto.jpg" alt="uninterpreto">
+            <img src="images/uninterpreto.jpg" alt="uninterpreto">
         </div>
     </footer>
+
+    <script src="js/script-footer.js" defer></script>
+    <!-- Usar o atributo defer para garantir que o JS seja executado somente após carregamento completo do DOM-->
 </body>
 
 </html>

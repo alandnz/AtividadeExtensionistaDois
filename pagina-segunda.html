@@ -7,7 +7,7 @@
     <title>Dados sobre Saúde</title>
     <!--onde aparece o título acima???-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -32,12 +32,15 @@
         <section>
             <h2>Dados sobre Saúde</h2>
 
-            <h1>Gastos Mensais da Prefeitura com Saúde</h1>
+            <canvas id="receita"></canvas> <!-- Onde o gráfico será exibido -->
+            <script src="js/script-receita.js"></script>
+
+            <div id="info-receita"></div>
+
             <canvas id="gastosSaude"></canvas> <!-- Onde o gráfico será exibido -->
-            <script src="script-saude.js"></script> <!-- Link para o JavaScript -->
+            <script src="js/script-saude.js"></script> <!-- Link para o JavaScript -->
 
-
-            <div id="info-saude" style="margin-top: 20px; text-align: center; font-size: 18px; color: #333;"></div>
+            <div id="info-saude"></div>
 
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae inventore, illo quisquam beatae
                 nihil totam reprehenderit vel. Perferendis, aut. Tempore fugit est aspernatur saepe. Incidunt debitis
@@ -127,33 +130,12 @@
 
             <p>Vitória - ES: <span id="data"></span></p>
 
-            <img src="uninterpreto.jpg" alt="uninterpreto">
+            <img src="images/uninterpreto.jpg" alt="uninterpreto">
         </div>
     </footer>
 
-    <script>
-        // Obter o elemento onde a data será exibida
-        var dataElement = document.getElementById('data');
-
-        // Obter a data atual
-        var dataAtual = new Date();
-
-        // Formatando a data (exemplo: DD/MM/AAAA)
-        var dia = dataAtual.getDate();
-        var mes = dataAtual.getMonth() + 1; // Mês é indexado a partir de zero
-        var ano = dataAtual.getFullYear();
-
-        // Adicionando um zero à esquerda se for menor que 10
-        if (dia < 10) {
-            dia = '0' + dia;
-        }
-        if (mes < 10) {
-            mes = '0' + mes;
-        }
-
-        // Exibir a data formatada no elemento HTML
-        dataElement.textContent = dia + '/' + mes + '/' + ano;
-    </script>
+    <script src="js/script-footer.js" defer></script>
+    <!-- Usar o atributo defer para garantir que o JS seja executado somente após carregamento completo do DOM-->
 </body>
 
 </html>

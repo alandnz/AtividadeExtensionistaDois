@@ -21,9 +21,9 @@ const graficoReceitas = new Chart(ctxReceitas, {
         plugins: {
             title: {
                 display: true,
-                text: 'Receita Total em 2024',
+                text: 'Receita Total da Prefeitura em 2024',
                 font: {
-                    size: 18
+                    size: 20
                 }
             }
         },
