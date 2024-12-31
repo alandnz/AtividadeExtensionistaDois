@@ -1,6 +1,6 @@
 // Dados dos gastos mensais (Exemplo)
 const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
-const gastos = [35797333.30, 39237394.34, 62816595.48, 70669978.77, 69634658.68, 66812900.92, 86368317.35, 62441364.83, 66185643.45, 80666277.61, 95917716.14, 70227806.54];
+const gastosEducacao = [35797333.30, 39237394.34, 62816595.48, 70669978.77, 69634658.68, 66812900.92, 86368317.35, 62441364.83, 66185643.45, 80666277.61, 95917716.14, 70227806.54];
 let detalhes = {}; // Usa-se let para permitir atualização
 
 
@@ -12,7 +12,7 @@ const graficoGastos = new Chart(ctx, {
         labels: meses, // Meses como rótulos
         datasets: [{
             label: 'Gastos em R$',
-            data: gastos, // Dados dos gastos
+            data: gastosEducacao, // Dados dos gastos
             backgroundColor: 'rgba(54, 162, 235, 0.6)', // Cor das barras
             borderColor: 'rgba(54, 162, 235, 1)', // Cor da borda
             borderWidth: 1 // Espessura da borda
@@ -47,7 +47,6 @@ const graficoGastos = new Chart(ctx, {
     }
 });
 
-
 // Carrega os dados JSON
 fetch('data/detalhes-educacao.json')
     .then(response => response.json())
@@ -74,7 +73,7 @@ document.getElementById('gastosEducacao').onclick = function (evt) {
         const detalheHTML = detalhe.detalhes.map(item => `<li>${item}</li>`).join('');
 
         // Altera a cor da barra clicada
-        graficoGastos.data.datasets[firstPoint.datasetIndex].backgroundColor = Array(gastos.length).fill('rgba(54, 162, 235, 0.6)');
+        graficoGastos.data.datasets[firstPoint.datasetIndex].backgroundColor = Array(gastosEducacao.length).fill('rgba(54, 162, 235, 0.6)');
         graficoGastos.data.datasets[firstPoint.datasetIndex].backgroundColor[firstPoint.index] = 'rgba(255, 99, 132, 0.6)';
         graficoGastos.update(); // Atualiza o gráfico
 

@@ -1,6 +1,6 @@
 // Dados dos gastos mensais (Exemplo)
 const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
-const gastos = [21264133.16, 33487975.33, 32217052.57, 38251124.44, 40196458.31, 49642912.24, 45232918.62, 44067009.36, 38827239.42, 46224012.52, 62645854.99, 33279907.08];
+const gastosSaude = [21264133.16, 33487975.33, 32217052.57, 38251124.44, 40196458.31, 49642912.24, 45232918.62, 44067009.36, 38827239.42, 46224012.52, 62645854.99, 33279907.08];
 let detalhes = {}; // Usa-se let para permitir atualização
 
 
@@ -12,7 +12,7 @@ const graficoGastos = new Chart(ctx, {
         labels: meses, // Meses como rótulos
         datasets: [{
             label: 'Gastos em R$',
-            data: gastos, // Dados dos gastos
+            data: gastosSaude, // Dados dos gastos
             backgroundColor: 'rgba(54, 162, 235, 0.6)', // Cor das barras
             borderColor: 'rgba(54, 162, 235, 1)', // Cor da borda
             borderWidth: 1 // Espessura da borda
@@ -73,7 +73,7 @@ document.getElementById('gastosSaude').onclick = function (evt) {
         const detalheHTML = detalhe.detalhes.map(item => `<li>${item}</li>`).join('');
 
         // Altera a cor da barra clicada
-        graficoGastos.data.datasets[firstPoint.datasetIndex].backgroundColor = Array(gastos.length).fill('rgba(54, 162, 235, 0.6)');
+        graficoGastos.data.datasets[firstPoint.datasetIndex].backgroundColor = Array(gastosSaude.length).fill('rgba(54, 162, 235, 0.6)');
         graficoGastos.data.datasets[firstPoint.datasetIndex].backgroundColor[firstPoint.index] = 'rgba(255, 99, 132, 0.6)';
         graficoGastos.update(); // Atualiza o gráfico
 

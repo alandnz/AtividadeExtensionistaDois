@@ -142,7 +142,9 @@ a:hover {
 
 #info-receita,
 #info-saude,
-#info-educacao {
+#info-educacao,
+#info-porcentagensSaude,
+#info-porcentagensEducacao {
     margin-top: 20px;
     text-align: center;
     font-size: 18px;
