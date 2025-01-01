@@ -4,6 +4,8 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
+    /* Impede a barra de rolagem global */
 }
 
 canvas {
@@ -19,7 +21,6 @@ canvas {
 header {
     background-color: #14213D;
     /*#788585*/
-    ;
     text-align: center;
     padding: 05px;
     /*Tamanho da fonte em "em"*/
@@ -65,8 +66,8 @@ section {
     font-size: 1.0em;
     text-align: justify;
     font-family: sans-serif;
-    /* height: calc(100vh - 150px);
-    overflow-y: auto;*/
+    height: calc(100vh - 250px);
+    overflow-y: auto;
     /* Adiciona a barra de rolagem vertical quando necessário */
 }
 
