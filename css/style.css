@@ -185,7 +185,8 @@ tr:hover {
     /* Destaque ao passar o mouse */
 }
 
-#tabela-saude {
+#tabela-saude,
+#tabela-educacao {
     width: 90%;
     /* Ocupa 90% da largura da página */
     max-width: 1200px;
