@@ -151,3 +151,47 @@ a:hover {
     font-size: 18px;
     color: #333;
 }
+
+/* Estilizando as tabelas */
+table {
+    width: 50%;
+    /* Largura ajustável */
+    border-collapse: collapse;
+    /* Remove os espaços entre bordas */
+    margin: 20px auto;
+    /* Centraliza a tabela na página */
+    font-family: Arial, sans-serif;
+}
+
+th,
+td {
+    border: 1px solid #f4f4f475;
+    /* Bordas das células */
+    padding: 10px;
+    /* Espaçamento interno */
+    text-align: center;
+    /* Centraliza o texto */
+}
+
+th {
+    background-color: #f4f4f450;
+    /* Cor de fundo do cabeçalho */
+    font-weight: bold;
+}
+
+
+tr:hover {
+    background-color: #b1b1b1;
+    /* Destaque ao passar o mouse */
+}
+
+#tabela-saude {
+    width: 90%;
+    /* Ocupa 90% da largura da página */
+    max-width: 1200px;
+    /* Define um limite máximo de largura */
+    margin: 0 auto;
+    /* Centraliza a tabela na página */
+    border-collapse: collapse;
+    /* Remove espaços entre as bordas */
+}
