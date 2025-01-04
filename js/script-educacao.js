@@ -1,21 +1,20 @@
-// Dados dos gastos mensais (Exemplo)
+// Dados dos gastos mensais
 const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 const gastosEducacao = [35797333.30, 39237394.34, 62816595.48, 70669978.77, 69634658.68, 66812900.92, 86368317.35, 62441364.83, 66185643.45, 80666277.61, 95917716.14, 70227806.54];
 let detalhes = {}; // Usa-se let para permitir atualização
 
-
 // Configuração do gráfico
 const ctx = document.getElementById('gastosEducacao').getContext('2d');
 const graficoGastos = new Chart(ctx, {
-    type: 'bar', // Tipo de gráfico (barras)
+    type: 'bar', // Tipo de gráfico
     data: {
         labels: meses, // Meses como rótulos
         datasets: [{
             label: 'Gastos em R$',
             data: gastosEducacao, // Dados dos gastos
-            backgroundColor: 'rgba(54, 162, 235, 0.6)', // Cor das barras
-            borderColor: 'rgba(54, 162, 235, 1)', // Cor da borda
-            borderWidth: 1 // Espessura da borda
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+            borderColor: 'rgba(54, 162, 235, 1)',
+            borderWidth: 1
         }]
     },
     options: {

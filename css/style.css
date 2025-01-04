@@ -20,12 +20,10 @@ canvas {
 
 header {
     background-color: #14213D;
-    /*#788585*/
     text-align: center;
     padding: 05px;
     /*Tamanho da fonte em "em"*/
     font-size: 1.3em;
-    /*#788585*/
 }
 
 header h1 {
@@ -47,9 +45,6 @@ main {
 
 nav {
     background-color: #FCA311;
-    /*#CCDAD1*/
-    ;
-
     flex: 1;
     padding: 20px;
     line-height: 1.3;
@@ -73,8 +68,6 @@ section {
 
 footer {
     background-color: #14213D;
-    /*#9CAEA9*/
-    ;
     text-align: left;
     padding: 5px;
     font-family: 'Courier New', Courier, monospace;
@@ -105,14 +98,11 @@ a:hover {
 /*Estilos para as classes*/
 
 .retangulo {
-    /*width: 300px;
-    /* largura do retângulo */
     padding: 20px;
     /* espaçamento interno do retângulo */
     background-color: #9CAEA9;
     /* cor de fundo do retângulo */
     border: 5px solid #cccccc00;
-    /* borda do retângulo */
     height: 100%;
     box-sizing: border-box;
 }
@@ -121,7 +111,6 @@ a:hover {
     max-width: 100%;
     /* Define a largura máxima para a imagem */
     height: 30vh;
-    /* Mantém a proporção da altura em % da altura da tela */
     display: block;
     /* Remove espaçamento extra abaixo da imagem */
     margin: 0 auto;
@@ -152,10 +141,10 @@ a:hover {
     color: #333;
 }
 
-/* Estilizando as tabelas */
+/* Estilos para as tabelas */
+
 table {
     width: 50%;
-    /* Largura ajustável */
     border-collapse: collapse;
     /* Remove os espaços entre bordas */
     margin: 20px auto;
@@ -168,9 +157,7 @@ td {
     border: 1px solid #f4f4f475;
     /* Bordas das células */
     padding: 10px;
-    /* Espaçamento interno */
     text-align: center;
-    /* Centraliza o texto */
 }
 
 th {
@@ -178,7 +165,6 @@ th {
     /* Cor de fundo do cabeçalho */
     font-weight: bold;
 }
-
 
 tr:hover {
     background-color: #b1b1b1;
@@ -195,4 +181,50 @@ tr:hover {
     /* Centraliza a tabela na página */
     border-collapse: collapse;
     /* Remove espaços entre as bordas */
+}
+
+/* Estilos para a tabela de contato */
+
+#formulario-contato {
+    width: 50%;
+    margin-left: 0;
+    margin-right: auto;
+    /* Garante que a tabela não fique centralizada */
+    border-collapse: collapse;
+    /* Para eliminar bordas internas */
+    background-color: transparent;
+    /* Define a mesma cor de fundo da página */
+}
+
+#formulario-contato th,
+#formulario-contato td {
+    border: none;
+    text-align: left;
+    padding: 5px;
+    background-color: transparent;
+}
+
+#formulario-contato th {
+    font-weight: normal;
+    vertical-align: top;
+}
+
+#formulario-contato tr:hover {
+    background-color: transparent;
+}
+
+/* Estilos para o botão Enviar */
+
+#formulario-contato button {
+    width: 150px;
+    /* Define a largura do botão */
+    padding: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    /* Adiciona o cursor "pointer" ao passar o mouse */
+    display: block;
+    /* Torna o botão um elemento de bloco */
+    margin: 5px auto 0 auto;
+    /* Centraliza o botão horizontalmente e adiciona um espaçamento acima */
+    text-align: center;
 }

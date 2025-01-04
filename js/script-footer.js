@@ -4,7 +4,7 @@ const dataElement = document.getElementById('data');
 // Obter a data atual
 const dataAtual = new Date();
 
-// Formatando a data (exemplo: DD/MM/AAAA)
+// Formatando a data
 let dia = dataAtual.getDate();
 let mes = dataAtual.getMonth() + 1; // Mês é indexado a partir de zero
 let ano = dataAtual.getFullYear();

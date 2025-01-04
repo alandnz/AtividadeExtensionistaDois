@@ -33,9 +33,10 @@
             <p>O projeto foi desenvolvido por Alan Diniz Salazar, estudante do curso de Análise e Desenvolvimento de
                 Sistemas do Centro Universitário Internacional Uninter, como parte das atividades propostas pela
                 disciplina Atividades Extensionistas II. O projeto tem como objetivo principal aplicar os conhecimentos
-                adquiridos ao longo do curso em um projeto prático, utilizando tecnologias como HTML, CSS e JavaScript.
-                A proposta consiste em criar um site simples e acessível, que analise e divulgue alguns dados públicos
-                da Prefeitura Municipal de Vitória, promovendo maior transparência e acessibilidade à população.</p>
+                adquiridos ao longo do curso em um projeto prático, utilizando tecnologias como HTML, CSS, JavaScript e
+                JSON. A proposta consiste em criar um site simples e acessível, que analise e divulgue alguns dados
+                públicos da Prefeitura Municipal de Vitória, promovendo maior transparência e acessibilidade à
+                população.</p>
 
             <p> A expectativa inicial era criar um portal simples, mas funcional, que pudesse traduzir dados públicos
                 complexos em informações acessíveis para a população. No entanto, o desenvolvimento do projeto trouxe
@@ -52,16 +53,19 @@
                 inspire futuras iniciativas acadêmicas e profissionais voltadas para a cidadania e o desenvolvimento
                 sustentável.</p>
 
-            <p>Para saber mais sobre o autor deste projeto, consulte os links abaixo.</p>
+            <p style="margin-top:40px;"><strong>Para saber mais sobre o projeto e visualizar todo o código, consulte o
+                    link abaixo:</strong></p>
 
             <ul>
-                <p><a href="https://github.com/alandnz/AtividadeExtensionistaDois">GitHub</a></p>
+                <p style="font-size: 20px;"><a href="https://github.com/alandnz/AtividadeExtensionistaDois"> # GitHub
+                        do Projeto</a>
+                </p>
             </ul>
 
-            <h3>Preencha os campos para contato</h3>
+            <h3 style="margin-top: 50px;">Preencha os campos para contato</h3>
 
-            <form action="processar_formulario.php" method="post">
-                <table>
+            <form action=# method="post" style="text-align: left;">
+                <table id="formulario-contato">
                     <tr>
                         <th><label for="nome">Nome:</label></th>
                         <td><input type="text" name="nome" id="nome"></td>
@@ -78,7 +82,6 @@
                     <tr>
                         <td></td>
                         <td><button>Enviar</button></td>
-                        <input type="submit" value="Enviar">
                     </tr>
                 </table>
             </form>

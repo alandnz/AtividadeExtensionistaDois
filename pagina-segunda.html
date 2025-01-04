@@ -5,7 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados sobre Saúde</title>
-    <!--onde aparece o título acima???-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -32,46 +31,70 @@
         <section>
             <h2>Dados sobre Saúde</h2>
 
+            <p>O portal organiza as informações financeiras da prefeitura em três gráficos interativos, que apresentam:
+            </p>
+            <ul>
+                <li><strong>Primeiro gráfico:</strong> Receitas totais do município, exibindo mensalmente as entradas
+                    financeiras, como impostos e repasses.</li>
+                <li><strong>Segundo gráfico:</strong> Despesas específicas com saúde, incluindo gastos com contratos,
+                    convênios, despesas de pessoal e bens.</li>
+                <li><strong>Terceiro gráfico:</strong> Porcentagem da receita total do mês destinada às despesas com
+                    saúde, permitindo analisar a proporção ao longo do tempo.</li>
+            </ul>
+            <p>Além disso, os gráficos são interativos. Ao clicar em uma coluna ou ponto, o rodapé exibe informações
+                detalhadas sobre o dado selecionado, promovendo maior transparência e compreensão.</p>
+
             <canvas id="receita"></canvas> <!-- Onde o gráfico será exibido -->
             <script src="js/script-receita.js"></script>
 
             <div id="info-receita"></div>
 
-            <canvas id="gastosSaude"></canvas> <!-- Onde o gráfico será exibido -->
+            <canvas id="gastosSaude"></canvas>
             <script src="js/script-saude.js"></script> <!-- Link para o JavaScript -->
 
             <div id="info-saude"></div>
 
-            <canvas id="porcentagensSaude"></canvas> <!-- Onde o gráfico será exibido -->
-            <script src="js/script-porcentagem.js"></script> <!-- Link para o JavaScript -->
+            <canvas id="porcentagensSaude"></canvas>
+            <script src="js/script-porcentagem.js"></script>
 
             <div id="info-porcentagensSaude"></div>
 
-            <p style="text-align: center; margin-bottom: 50px; color: #d6420c;"><i>Para consultar os valores de cada
-                    mês, basta clicar
-                    na coluna ou ponto desejados.</i>
-            </p>
-
             <h3>Explicações sobre os gráficos</h3>
 
-            <p>Os valores pagos aqui retratados são referentes a gastos com contratos, convênios, despesas de pessoal,
-                bens móveis e imóveis.
-            </p>
-            <p>Cada coluna representa a despesa total do mês da Secretaria de Saúde, ou seja, é o valor total gasto
-                com Saúde naquele mês. Optou-se por apresentar os valores totais pois as despesas de uma Prefeitura
-                são inúmeras e possuem diversos tipos, com vários contratos e convênios, além de poderem perpassar
-                vários meses ou anos. Nesse sentido, como o intuito dessa página é a apresentação da informação de
-                maneira mais direta e sucinta, além de fazer parte do processo de aprendizagem com o
-                desenvolvimento da Atividade Extensionista, um maior detalhamento de cada item seria inviável para a
-                proposta.
-            </p>
-            <p>O valor empenhado refere-se à reserva do orçamento feita pela Administração para que o compromisso seja
-                honrado. O valor liquidado é quando ocorre a aquisição de bens ou contratação de serviços. O valor pago
-                é quando efetivamente se efetua o pagamento, ou seja, quando o dinheiro sai da conta da Administração.
-            </p>
+            <p>Cada coluna no gráfico de despesas representa o total gasto pela Secretaria de Saúde em um mês
+                específico. Esses valores incluem uma ampla gama de despesas, como contratos, convênios, aquisição de
+                bens e serviços e pagamento de pessoal. Optou-se por exibir os valores totais para oferecer uma visão
+                consolidada, considerando a diversidade e a complexidade das despesas municipais. Como o objetivo
+                principal desta página é apresentar informações de forma clara e direta, o detalhamento individual de
+                cada item foi simplificado para alinhar-se à proposta pedagógica da Atividade Extensionista II.</p>
+            <p>As informações sobre valores empenhados, liquidados e pagos fornecem um panorama essencial para o
+                acompanhamento da gestão orçamentária. O valor empenhado indica a reserva de orçamento feita pela
+                Administração para garantir que os compromissos financeiros sejam honrados. O valor liquidado reflete a
+                etapa em que bens são adquiridos ou serviços contratados, marcando o cumprimento das obrigações. Por
+                fim, o valor pago corresponde ao desembolso efetivo, quando os recursos financeiros são transferidos
+                para os fornecedores ou prestadores de serviço.</p>
+
+            <h3>Sobre as Tabelas</h3>
+
+            <p>Os dados apresentados na tabela mostram que a Secretaria de Saúde firmou um total de 98 contratos,
+                totalizando R$ 128.856.167,83. Esses contratos abrangem uma ampla gama de serviços e aquisições
+                necessários para garantir o funcionamento e a melhoria do sistema de saúde no município. Além disso,
+                foram firmados 5 convênios, somando R$ 946.919,34, que refletem parcerias estratégicas voltadas para
+                a execução de projetos na área da saúde de grande relevância.</p>
+            <p>Na área de recursos humanos, a tabela destaca que a Secretaria conta com 256 cargos e um total de
+                3.553 servidores ativos, evidenciando a dimensão da força de trabalho necessária para atender às
+                demandas do sistema de saúde municipal. Esses números ressaltam a importância dos investimentos em
+                pessoal para a manutenção e ampliação da qualidade no atendimento aos cidadãos.</p>
+            <p>Sobre o patrimônio da Secretaria, foram registrados 42.043 bens móveis, que incluem equipamentos
+                médicos, mobiliário e materiais utilizados nas unidades de saúde, e 49 bens imóveis, representando a
+                infraestrutura física destinada ao atendimento e ao suporte dos serviços de saúde. Esses dados refletem
+                a dimensão e o alcance dos recursos disponíveis para garantir a assistência à população.</p>
+            <p>Para uma análise mais detalhada, o portal também apresenta uma tabela com os 10 contratos de maior valor
+                firmados pela Secretaria de Saúde. Essa tabela permite identificar os principais investimentos
+                realizados e contribui para a transparência na aplicação dos recursos públicos, oferecendo à população
+                uma visão clara de como o orçamento está sendo direcionado na área da saúde.</p>
 
             <!-- Tabelas diretamente no HTML -->
-            <h3>Exemplo de Tabela</h3>
 
             <table>
                 <tr>
@@ -161,12 +184,13 @@
             </table>
             <script src="js/tabela-saude.js"></script>
 
-            <p><strong>*Observação importante:</strong><br>
+            <p style="font-size: 14px;">
+                <strong>*Observação importante:</strong><br>
                 Os valores aqui apresentados foram retirados do portal de transparência da Prefeitura, sendo a última
-                consulta aos valores do portal feita em 27/12/2024. Todos os valores são do ano de 2024.
+                consulta aos valores do portal feita em 04/01/2025. Todos os valores são do ano de 2024.
             </p>
 
-            <!--<img class="proporcao-imagem" src="panoramicavitoria03.jpg" alt="vitoria">-->
+            <!--<img class="proporcao-imagem" src="images/panoramicavitoria03.jpg" alt="vitoria">-->
         </section>
 
         <nav>

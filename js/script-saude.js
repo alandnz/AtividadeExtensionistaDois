@@ -1,4 +1,4 @@
-// Dados dos gastos mensais (Exemplo)
+// Dados dos gastos mensais
 const meses = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 const gastosSaude = [21264133.16, 33487975.33, 32217052.57, 38251124.44, 40196458.31, 49642912.24, 45232918.62, 44067009.36, 38827239.42, 46224012.52, 62645854.99, 33279907.08];
 let detalhes = {}; // Usa-se let para permitir atualização
@@ -7,19 +7,19 @@ let detalhes = {}; // Usa-se let para permitir atualização
 // Configuração do gráfico
 const ctx = document.getElementById('gastosSaude').getContext('2d');
 const graficoGastos = new Chart(ctx, {
-    type: 'bar', // Tipo de gráfico (barras)
+    type: 'bar',
     data: {
-        labels: meses, // Meses como rótulos
+        labels: meses,
         datasets: [{
             label: 'Gastos em R$',
-            data: gastosSaude, // Dados dos gastos
-            backgroundColor: 'rgba(54, 162, 235, 0.6)', // Cor das barras
-            borderColor: 'rgba(54, 162, 235, 1)', // Cor da borda
+            data: gastosSaude,
+            backgroundColor: 'rgba(54, 162, 235, 0.6)',
+            borderColor: 'rgba(54, 162, 235, 1)',
             borderWidth: 1 // Espessura da borda
         }]
     },
     options: {
-        responsive: true, // Ajusta para telas menores
+        responsive: true,
         plugins: {
             title: {
                 display: true,
@@ -31,7 +31,7 @@ const graficoGastos = new Chart(ctx, {
         },
         scales: {
             y: {
-                beginAtZero: true, // Inicia o eixo Y no zero
+                beginAtZero: true,
                 title: {
                     display: true,
                     text: 'Valor em R$'
@@ -60,8 +60,8 @@ document.getElementById('gastosSaude').onclick = function (evt) {
 
     if (points.length) {
         const firstPoint = points[0];
-        const label = graficoGastos.data.labels[firstPoint.index]; // Rótulo (mês)
-        const value = graficoGastos.data.datasets[firstPoint.datasetIndex].data[firstPoint.index]; // Valor (gasto)
+        const label = graficoGastos.data.labels[firstPoint.index];
+        const value = graficoGastos.data.datasets[firstPoint.datasetIndex].data[firstPoint.index];
 
         const detalhe = detalhes[label];
         if (!detalhe) {
@@ -83,6 +83,6 @@ document.getElementById('gastosSaude').onclick = function (evt) {
              <h3>Detalhes de ${label}</h3>
             <p>Valor total pago no mês: R$ ${value.toLocaleString()}</p>
             <p><strong>Detalhes:</strong></p>
-            <ul>${detalheHTML}</ul>`; // Exibe os detalhes antes do resumo
+            <ul>${detalheHTML}</ul>`;
     }
 };

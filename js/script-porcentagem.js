@@ -3,20 +3,20 @@ function criarGraficoPorcentagem(idCanvas, idInfo, tituloGrafico, labelDataset, 
 
     const ctx = document.getElementById(idCanvas).getContext('2d');
     const grafico = new Chart(ctx, {
-        type: 'line', // Tipo de gráfico (linha)
+        type: 'line', // Tipo de gráfico linha
         data: {
-            labels: meses, // Meses como rótulos
+            labels: meses,
             datasets: [{
                 label: labelDataset,
                 data: porcentagens, // Dados das porcentagens
-                backgroundColor: 'rgba(75, 192, 192, 0.2)', // Cor de fundo
-                borderColor: 'rgba(75, 192, 192, 1)', // Cor da borda
-                borderWidth: 2, // Espessura da borda
+                backgroundColor: 'rgba(75, 192, 192, 0.2)',
+                borderColor: 'rgba(75, 192, 192, 1)',
+                borderWidth: 2,
                 tension: 0.4 // Curvatura da linha
             }]
         },
         options: {
-            responsive: true, // Ajusta para telas menores
+            responsive: true,
             plugins: {
                 title: {
                     display: true,

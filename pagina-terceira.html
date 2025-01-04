@@ -31,47 +31,75 @@
         <section>
             <h2>Dados sobre Educação</h2>
 
+            <p>O portal organiza as informações financeiras da prefeitura em três gráficos interativos, que apresentam:
+            </p>
+            <ul>
+                <li><strong>Primeiro gráfico:</strong> Receitas totais do município, exibindo mensalmente as entradas
+                    financeiras, como impostos e repasses.</li>
+                <li><strong>Segundo gráfico:</strong> Despesas específicas com educação, incluindo gastos com contratos,
+                    convênios, despesas de pessoal e bens.</li>
+                <li><strong>Terceiro gráfico:</strong> Porcentagem da receita total do mês destinada às despesas com
+                    educação, permitindo analisar a proporção ao longo do tempo.</li>
+            </ul>
+            <p>Além disso, os gráficos são interativos. Ao clicar em uma coluna ou ponto, o rodapé exibe informações
+                detalhadas sobre o dado selecionado, promovendo maior transparência e compreensão.</p>
+
             <canvas id="receita"></canvas> <!-- Onde o gráfico será exibido -->
             <script src="js/script-receita.js"></script>
 
             <div id="info-receita"></div>
 
-            <canvas id="gastosEducacao"></canvas> <!-- Onde o gráfico será exibido -->
+            <canvas id="gastosEducacao"></canvas>
             <script src="js/script-educacao.js"></script>
 
             <div id="info-educacao"></div>
 
-            <canvas id="porcentagensEducacao"></canvas> <!-- Gráfico de educação -->
-            <script src="js/script-porcentagem.js"></script> <!-- Link para o JavaScript -->
+            <canvas id="porcentagensEducacao"></canvas>
+            <script src="js/script-porcentagem.js"></script>
 
             <div id="info-porcentagensEducacao"></div>
 
-            <p style="text-align: center; margin-bottom: 50px; color: #d6420c;"><i>Para consultar os valores de cada
-                    mês, basta clicar na coluna ou ponto desejados.</i>
-            </p>
-
             <h3>Explicações sobre os gráficos</h3>
 
-            <p>Os valores pagos aqui retratados são referentes a gastos com contratos, convênios, despesas de pessoal,
-                bens móveis e imóveis.
-            </p>
-            <p>Cada coluna representa a despesa total do mês da Secretaria de Educação, ou seja, é o valor total gasto
-                com Educação naquele mês. Optou-se por apresentar os valores totais pois as despesas de uma Prefeitura
-                são inúmeras e possuem diversos tipos, com vários contratos e convênios, além de poderem perpassar
-                vários meses ou anos. Nesse sentido, como o intuito dessa página é a apresentação da informação de
-                maneira mais direta e sucinta, além de fazer parte do processo de aprendizagem com o
-                desenvolvimento da Atividade Extensionista, um maior detalhamento de cada item seria inviável para a
-                proposta.
-            </p>
+            <p>Cada coluna no gráfico de despesas representa o total gasto pela Secretaria de Educação em um mês
+                específico. Esses valores incluem uma ampla gama de despesas, como contratos, convênios, aquisição de
+                bens e serviços e pagamento de pessoal. Optou-se por exibir os valores totais para oferecer uma visão
+                consolidada, considerando a diversidade e a complexidade das despesas municipais. Como o objetivo
+                principal desta página é apresentar informações de forma clara e direta, o detalhamento individual de
+                cada item foi simplificado para alinhar-se à proposta pedagógica da Atividade Extensionista II.</p>
+            <p>As informações sobre valores empenhados, liquidados e pagos fornecem um panorama essencial para o
+                acompanhamento da gestão orçamentária. O valor empenhado indica a reserva de orçamento feita pela
+                Administração para garantir que os compromissos financeiros sejam honrados. O valor liquidado reflete a
+                etapa em que bens são adquiridos ou serviços contratados, marcando o cumprimento das obrigações. Por
+                fim, o valor pago corresponde ao desembolso efetivo, quando os recursos financeiros são transferidos
+                para os fornecedores ou prestadores de serviço.</p>
 
-            <p>O valor empenhado refere-se à reserva do orçamento feita pela Administração para
-                que o compromisso seja honrado. O valor liquidado é quando ocorre a aquisição de bens ou contratação de
-                serviços. O valor pago é quando efetivamente se efetua o pagamento, ou seja, quando o dinheiro sai da
-                conta da Administração.
-            </p>
+            <h3>Sobre as Tabelas</h3>
+
+            <p>Além dos gráficos, o portal apresenta tabelas detalhadas que permitem ao cidadão compreender melhor como
+                os recursos estão sendo utilizados. A primeira tabela traz informações sobre contratos, destacando o
+                total de 77 contratos firmados pela Secretaria de Educação, com um valor total de R$ 283.276.433,78.
+                Esses contratos abrangem diversas finalidades, como fornecimento de materiais, serviços especializados e
+                obras de infraestrutura.</p>
+            <p>A tabela de convênios fornece detalhes sobre os 137 convênios firmados, que totalizam R$ 79.984.341,08.
+                Esses convênios geralmente envolvem parcerias com outras entidades para a execução de projetos voltados
+                à melhoria do ensino público e outras iniciativas educacionais relevantes. É importante notar que tanto
+                os contratos quanto os convênios apresentados são referentes a acordos iniciados em 2024, com muitos
+                deles tendo validade superior a um ano.</p>
+            <p>A seção de informações pessoais destaca os recursos humanos da Secretaria, com 276 cargos registrados e
+                um total de 9.718 servidores em atividade. Esses números evidenciam o impacto direto da educação na
+                administração pública e a dimensão da estrutura necessária para atender às demandas educacionais do
+                município.</p>
+            <p>Já a tabela de bens móveis e imóveis apresenta o patrimônio utilizado pela Secretaria, com 195.349 bens
+                móveis e 90 bens imóveis cadastrados. Esses ativos incluem desde equipamentos utilizados em escolas até
+                instalações físicas onde o ensino é ministrado, representando um aspecto essencial para o funcionamento
+                das atividades educacionais.</p>
+            <p>Complementando essas tabelas, o portal também apresenta uma lista com os 10 contratos de maior valor
+                firmados pela Secretaria de Educação. Essa tabela é especialmente útil para identificar os principais
+                investimentos realizados, permitindo uma análise mais detalhada e contribuindo para a transparência na
+                aplicação dos recursos públicos.</p>
 
             <!-- Tabelas diretamente no HTML -->
-            <h3>Exemplo de Tabela</h3>
 
             <table>
                 <tr>
@@ -161,13 +189,13 @@
             </table>
             <script src="js/tabela-educacao.js"></script>
 
-            <p><strong>*Observação importante:</strong><br>
+            <p style="font-size: 14px;">
+                <strong>*Observação importante:</strong><br>
                 Os valores aqui apresentados foram retirados do portal de transparência da Prefeitura, sendo a última
-                consulta aos valores do portal feita em 27/12/2024. Todos os valores são do ano de 2024.
+                consulta aos valores do portal feita em 04/01/2025. Todos os valores são do ano de 2024.
             </p>
 
-
-            <img class="proporcao-imagem" src="images/panoramicavitoria03.jpg" alt="vitoria">
+            <!-- <img class="proporcao-imagem" src="images/panoramicavitoria03.jpg" alt="vitoria"> -->
         </section>
 
         <nav>
